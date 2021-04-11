@@ -58,5 +58,9 @@ def search_information(country):
     search_stats(data_transfer, "deaths", "new", "total")
     search_stats(data_transfer, "tests", "total")
 
+    for i in allInformation:
+        if allInformation[i] == "N one ":
+            allInformation[i] = "Aucunes informations "
+
     return allInformation
 
