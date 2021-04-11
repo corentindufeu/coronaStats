@@ -4,6 +4,7 @@ from buttonsScripts import enterButton, reset
 window = Tk()
 
 window.title("Information sur le covid en temp réel")
+window.iconbitmap("./icone.ico")
 window.geometry('1300x700')
 window.minsize(500, 350)
 window.configure(bg='#334')

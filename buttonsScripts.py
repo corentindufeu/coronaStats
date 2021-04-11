@@ -26,7 +26,7 @@ def enterButton(reset_button, global_result_frame, choice_country):
     countryLabel.pack(expand=True)
     populationLabel = Label(resultFrame, text=data['population'] + "habitants", bg='white', font=('Courrier', 10), fg='#4065A4')
     populationLabel.pack(expand=True)
-    total_testsLabel = Label(resultFrame, text=data['total_tests'] + "personnes testés", bg='white',
+    total_testsLabel = Label(resultFrame, text=data['total_tests'] + "personnes testées", bg='white',
                              font=('Courrier', 10), fg='#4065A4')
     total_testsLabel.pack(expand=True)
 
