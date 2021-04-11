@@ -50,13 +50,13 @@ def search_information(country):
     country: str = str(data["response"][0]["country"])
     population: str = str(data["response"][0]["population"])
     population: str = non_breaking_spaces_number(population)
-    allInformation.update({'population': population+" habitants", 'country': country})
+    allInformation.update({'population': population, 'country': country})
 
     # stats
     data_transfer: tuple = (data, allInformation)
-    search_stats(data_transfer, "cases", "active", "critical", "recovered", "1M_pop", "total")
-    search_stats(data_transfer, "deaths", "new", "1M_pop", "total")
-    search_stats(data_transfer, "tests", "1M_pop", "total")
-    print(allInformation)
+    search_stats(data_transfer, "cases", "active", "new", "critical", "recovered", "total")
+    search_stats(data_transfer, "deaths", "new", "total")
+    search_stats(data_transfer, "tests", "total")
+
     return allInformation
 
